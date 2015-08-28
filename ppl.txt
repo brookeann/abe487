@@ -1,0 +1,10 @@
+ 13:27:57 up 36 days, 23:04, 37 users,  load average: 2.50, 2.55, 2.34
+USER     TTY      FROM              LOGIN@   IDLE   JCPU   PCPU WHAT
+tkaralid pts/0    theodora.as.ariz 18Aug15 20:33m 23:44   1.33s -bash
+hsiehph  pts/1    shavano.mcb.ariz Sat17   20:46m  0.15s  0.15s -csh
+gustaw   pts/2    threshold1.cent. 12:36   48:59   0.03s  0.03s ssh elgato
+mvarga   pts/3    localhost:11.0   Mon07    3:40m  1.61s  1.58s /home/u18/anton
+gustaw   pts/4    threshold1.cent. 06:25    6:46m  0.04s  0.04s ssh elgato
+panxl    pts/6    schwartzgroup6.a Mon09   52.00s  4.83s  4.83s ssh service2
+michaelw pts/9    localhost:12.0   Wed07   30:03m  0.03s  0.03s /home/u18/anton
+cdquinto pts/10   tikal.arl.arizon Mon14   20:57m 24.53s 24.53s -bash
