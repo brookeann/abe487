@@ -1,0 +1,56 @@
+1. Log into your HPC account. 
+2. What is the full path to your home directory?
+
+ans: /home/u4/brooker
+
+3. Go up one directory?
+	- How many files does it contain?
+
+ans: 0
+
+        - How many directories?
+
+ans: 48
+ 
+4. Using your text editor (nano is a good one to start with) create a fasta file and name it sequences.fasta. Make sure it ends up in the proper directory, locally or remotely.
+
+         This is fasta file format:
+         >seqName description
+         ATGGCGTCTTGGCCTTAAAAGCTC
+ 
+5. Without using a text editor examine the contents of the file sequences.fasta.
+        - How many lines does this file contain?   
+
+ans: 6
+
+        - How many characters?    (Hint: check out the options of wc)
+
+ans: 370
+
+        - What is the first line of this file?    (Hint: read the man page of head)
+
+ans: >gi|5524211|gb|AAD44166.1| cytochrome b [Elephas maximus maximus]
+
+        - What are the last 3 lines?    (Hint: read the man page of tail)
+
+ans: LLILILLLLLLALLSPDMLGDPDNHMPADPLNTPLHIKPEWYFLFAYAILRSVPNKLGGVLALFLSIVIL
+   GLMPFLHTSKHRSMMLRPLSQALFWTLTMDLLTLTWIGSQPVEYPYTIIGQMASILYFSIILAFLPIAGX
+   IENY
+      
+	 - How many sequences are in the file?    (Hint: use grep)
+    
+ans: 1
+
+6. Rename sequences.fasta to something more informative of the sequences the file contains. (Hint: read the man page for mv)
+
+7. Create a directory called fasta.     (Hint: use mkdir)
+
+8. Copy the fasta file that you renamed to the fasta directory. (Hint: use cp)
+
+9. Verify that the file is within the fasta directory.    (Hint: use ls fasta/)
+
+10. Delete the the original file that you used for copying.    (Hint: use rm, be careful)
+
+11. Read the man page for rm and cp to find out how to remove and copy a directory.
+
+12. Print out your history and redirect it to a file called unixBasics.history.txt
