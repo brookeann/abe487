@@ -1,0 +1,281 @@
+    1  scp ./myFirstSub.csh brooker@login.hpc.arizona.edu:~/wsms/
+    2  ls
+    3  exit
+    4  ls
+    5  cd ..
+    6  ls
+    7  man wget
+    8  wget "http://cals.arizona.edu/~anling/workshop/tset.fna"
+    9  man wget
+   10  wget http://cals.arizona.edu/~anling/workshop/tset.fna
+   11  man wget
+   12  ls
+   13  cd brooker/
+   14  ls
+   15  wget http://cals.arizona.edu/~anling/workshop/tset.fna
+   16  ls
+   17  head tset.fna
+   18  lines tset.fna 
+   19  vi
+   20  vi tset.fna 
+   21  module avail
+   22  more on
+   23  more
+   24  module load blast
+   25  blast
+   26  blastn
+   27  blastn -db /genome/Bacteria/NCBI_genomes_Bacteria -query tset.fna -out tset.txt
+   28  vi tset.txt 
+   29  blastn -db /genome/Bacteria/NCBI_genomes_Bacteria -query tset.fna -out tset.txt -outfmt 7
+   30  ls
+   31  vi tset.
+   32  vi tset.fna 
+   33  vi tset.txt 
+   34  wget http://cals.arizona.edu/~anling/workshop/template.csh
+   35  vi template.csh 
+   36  wget http://cals.arizona.edu/~anling/workshop/*
+   37  wget -r http://cals.arizona.edu/~anling/workshop/
+   38  ls
+   39  rm cals.arizona.edu/
+   40  rmdir cals.arizona.edu/
+   41  wget 
+   42  ls
+   43  man wget
+   44  wget http://cals.arizona.edu/~anling/workshop/*
+   45  wget http://cals.arizona.edu/~anling/workshop/
+   46  ls
+   47  man wget
+   48  vi template.csh 
+   49  mv template.csh myFirstSub.csh
+   50  vi myFirstSub.csh 
+   51  mkdir wsms
+   52  cd wsms
+   53  cd ..
+   54  ls
+   55  cd u4/
+   56  ls
+   57  cd suz/
+   58  cd ..
+   59  cd brooker
+   60  cd u4/brooker/
+   61  cd wsms/
+   62  ls
+   63  cp //home/u4/brooker/* ./
+   64  ls
+   65  rm index.html 
+   66  qsub myFirstSub.csh 
+   67  vi myFirstSub.csh 
+   68  qsub myFirstSub.csh 
+   69  ls
+   70  wget http://cals.arizona.edu/~anling/workshop/testset.fna
+   71  qsub myFirstSub.csh 
+   72  ls
+   73  qstat -u brooker
+   74  ls
+   75  vi myFirstSub.e305458 
+   76  grep -c "0 hits found" testset.txt
+   77  ls -l
+   78  rm *.e*
+   79  rm *.o*
+   80  ls
+   81  vi: testset.txt 
+   82  vi testset.txt 
+   83  R
+   84  r
+   85  load module R
+   86  module load r
+   87  module load R
+   88  R
+   89  wget http://cals.arizona.edu/~anling/software/taec_linux.zip
+   90  unzip taec_linux.zip 
+   91  module load R
+   92  source("taec.R");
+   93  R
+   94  ls
+   95  cd taec_rev/
+   96  ls
+   97  cd .
+   98  cd ..
+   99  ls
+  100  wget http://cals.arizona.edu/~anling/software/RAIDA_1.0.tar.gz
+  101  R
+  102  exit
+  103  ls
+  104  cd R
+  105  ls
+  106  cd ..
+  107  cd wsms/
+  108  ls
+  109  cd ..
+  110  module load blast
+  111  ls
+  112  cd ..
+  113  ls
+  114  cd brooker/
+  115  ls
+  116  exit() exit
+  117  quit
+  118  exit
+  119  ls
+  120  ls --help
+  121  pwd
+  122  ls -F
+  123  ls
+  124  man(ls)
+  125  man ls
+  126  ls -all
+  127  vi .bashrc 
+  128  cd ..
+  129  ls
+  130  cd ..
+  131  ls
+  132  cd rsgrps
+  133  ls
+  134  cd bhurwitz/
+  135  ls
+  136  cd ~
+  137  mkdir courses
+  138  mkdir ./courses/abe587
+  139  cd ./courses/abe587/
+  140  ls
+  141  man wc
+  142  w | wc
+  143  man w
+  144  man wc
+  145  w | wc -l
+  146  man wc
+  147  cd ~
+  148  pwd
+  149  man pwd
+  150  cd ..
+  151  ls | wc
+  152  ls
+  153  ls | wc -l
+  154  man ls
+  155  ls -dir | wc -l
+  156  ls -l
+  157  more on
+  158  more
+  159  man ls
+  160  ls -d
+  161  man ls
+  162  ls
+  163  ls -l
+  164  ls -lh
+  165  ls -all
+  166  man date
+  167  data -rfc
+  168  data -rfc-3339
+  169  man date
+  170  data -rfc-3339
+  171  man date
+  172  date -rfc-3339=seconds
+  173  date -rfc-3339="seconds"
+  174  date -rfc
+  175  man
+  176  date
+  177  man date
+  178  w
+  179  who
+  180  w
+  181  man w
+  182  man who
+  183  w | head -5
+  184  w | head
+  185  w | head > ~/courses/abe587/ppl.txt
+  186  vi ~/courses/abe587/ppl.txt 
+  187  cd ~/courses/abe587/ppl.txt 
+  188  cd ~/courses/abe587/
+  189  id
+  190  ls
+  191  cd ..
+  192  ls
+  193  cp /tmp/cuffdiff.txt .
+  194  cd abe587/
+  195  ftp ftp.imicrobe.us
+  196  ls -all
+  197  cd .ssh/
+  198  ls
+  199  ls -l
+  200  grep -L ENCRYPTED ~/.ssh/id_[rd]sa
+  201  ssh-keygen -t rsa -b 4096 -C "dreamworm@gmail.com"
+  202  eval "$(ssh-agent -s)"
+  203  ssh-add ~/.ssh/id_rsa
+  204  cat ~/.ssh/id_rsa.pub 
+  205  ssh -T git@github.com
+  206  cd ./courses/abe587/
+  207  ls
+  208  git init
+  209  pwd
+  210  git add .
+  211  git commit -m 'First commit - yay!'
+  212  git remote add origin git@github.com:brookeann/abe587.git
+  213  git remove -v
+  214  git remote -v
+  215  git push origin master
+  216  pwd
+  217  ls | wc -l
+  218  ls
+  219  man wc
+  220  cd ..
+  221  ls 
+  222  ls | wc -l
+  223  vi sequences.fasta
+  224  ls
+  225  cd brooker/
+  226  vi sequences.fasta
+  227  ls
+  228  head sequences.fasta 
+  229  tail sequences.fasta 
+  230  vi sequences.fasta 
+  231  ls
+  232  mv sequences.fasta ./courses/abe587/
+  233  ls
+  234  cd ./courses/abe587/
+  235  ls
+  236  wc -l sequences.fasta 
+  237  cat sequences.fasta | wc -l
+  238  cat sequences.fasta 
+  239  man wc
+  240  cat sequences.fasta | wc -m
+  241  head sequences.fasta -1
+  242  head -1 sequences.fasta -1
+  243  head -l1 sequences.fasta -1
+  244  man head
+  245  head -n1 sequences.fasta -1
+  246  head -n--1 sequences.fasta -1
+  247  head -n-1 sequences.fasta
+  248  vi sequences.fasta 
+  249  cat sequences.fasta | wc
+  250  head wc
+  251  head sequences.fasta 
+  252  head -n1 sequences.fasta 
+  253  grep > | wc - l
+  254  grep ">" sequences.fasta | wc - l
+  255  grep ">" sequences.fasta | wc -l
+  256  cd ..
+  257  pwd
+  258  cat ./courses/abe587/sequences.fasta | wc
+  259  cat ./courses/abe587/sequences.fasta | wc -m
+  260  head -n1 sequences.fasta 
+  261  head -n1 ./courses/abe587/sequences.fasta 
+  262  tail -n3 ./courses/abe587/sequences.fasta 
+  263  mv ./courses/abe587/sequences.fasta ./courses/abe587/elephas.fasta
+  264  cd ./courses/abe587/
+  265  mkdir fasta
+  266  cp elephas.fasta ./fasta/elephas.fasta
+  267  ls ./fasta/
+  268  rm elephas.fasta 
+  269  man rm
+  270  man cp
+  271  ls -all
+  272  cd ~
+  273  ls -al
+  274  cat .bash_history 
+  275  cd ./courses/abe587/
+  276  cat .bash_history
+  277  ls -a
+  278  cd ~
+  279  tail .bash_history 
+  280  history
+  281  history > unixBasics.history.txt
