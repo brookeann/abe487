@@ -4,9 +4,8 @@ use strict;
 use warnings;
 use Data::Dumper;
 use feature 'say';
-if (!defined(@ARGV)) {
-    say "Please provide a sequence.";
-    exit;
+if (!@ARGV) {
+    die "Please provide a sequence.\n";
 }
 my $input = shift @ARGV;
 my $k = 3;
@@ -20,16 +19,15 @@ if (-e $input) {
     $sequence = uc(join("",<$f>));
     $sequence =~ s/[^A-Z0-9]//g; 
     if (length($sequence) < 1) {
-	say "Zero-length sequence.";
-	exit;
+	die "Zero-length sequence.\n";
     }
 }
 else {
     $sequence = uc($input);
 }
 if (length($sequence) < $k) {
-    say "Cannot get any ", $k, " mers from a sequence of length ",length($sequence);
-    exit;
+    die "Cannot get any ", $k, " mers from a sequence of length ",
+        length($sequence), "\n";
 }
 my %freqkmers;
 for (my $i = 0; $i <= length($sequence) - $k; $i++) {

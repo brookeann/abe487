@@ -1,0 +1,24 @@
+ok 1 - 02-fasta-hash.pl
+ok 2 - 02-fasta-hash.pl test.fa
+ok 3 - 03-common-words.pl
+ok 4 - 03-common-words.pl fox-in-socks.txt green-eggs.txt
+ok 5 - 04-kmer-count.pl
+ok 6 - 04-kmer-count.pl A
+ok 7 - 04-kmer-count.pl AAA
+ok 8 - 04-kmer-count.pl TTTGATACTCCTATTAAGTAA 2
+not ok 9 - 04-kmer-count.pl mouse.fa 8
+#   Failed test '04-kmer-count.pl mouse.fa 8'
+#   at /usr/local/lib/perl5/site_perl/5.22.0/Test/Script/Run.pm line 258.
+#          got: '4'
+#     expected: '0'
+# Different in line: 1: got (Sequence length      42161), expect (Sequence length      42162)
+# 
+# 3: got (Number of kmers      42154), expect (Number of kmers      42155)
+# 
+# 4: got (Unique kmers         27329), expect (Unique kmers         27330)
+# 
+# 5: got (Num. singletons      17857), expect (Num. singletons      17858)
+1..9
+The plan was already output at /usr/local/lib/perl5/5.22.0/Test/Builder.pm line 2510.
+1..9
+# Looks like you failed 1 test of 9.

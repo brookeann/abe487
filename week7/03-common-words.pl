@@ -18,8 +18,7 @@ if (scalar(@ARGV) == 2) {
     }
 } 
 else {
-    say 'Hey, enter two files';
-    exit;
+    die "Please provide two files.\n";
 }
 my @wrds1 = split(" ",join(" ",<$f1>));
 my @wrds2 = split(" ",join(" ",<$f2>));
