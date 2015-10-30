@@ -17,7 +17,7 @@ if (-e $in) {
     $in = join('',<$fh>);
 }
 
-$in =~ s/([AG])(AATT[CT])/$1^$2/g;
 $in =~ s/\n//g;
+$in =~ s/([AG])(AATT[CT])/$1^$2/g;
 say $in; 
 
