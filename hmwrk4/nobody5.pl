@@ -1,9 +1,11 @@
 #!/usr/bin/env perl
 #file: nobody5.pl
+
 use strict;
 use warnings;
-#use autodie;
-open my $f, '<', "nobody.txt" or die "Could not find file: $!\n";
+use autodie;
+open my $f, '<', "nobody.txt";
+
 my $lnum = 0;
 while (my $line = <$f>) {
 	my $inobody = index($line,"Nobody");
@@ -24,3 +26,6 @@ while (my $line = <$f>) {
 	}
 }
 
+__END__
+
+Only need to print /if/ target is found.
