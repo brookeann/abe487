@@ -1,0 +1,7 @@
+I had to make a number of corrections to get your code to pass the tests.
+It's important to "die" and not just "say/exit" because "die" indicates an
+error that should be on STDERR and "say" goes to STDOUT by default.  In the
+restriction exercise, it's necessary to remove the spaces before looking 
+for the cut sites as you miss one (a newline is inside the sequence).
+
+Two points off.

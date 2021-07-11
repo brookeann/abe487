@@ -6,8 +6,7 @@ use Data::Dumper;
 use feature 'say';
 
 if (scalar(@ARGV) == 0) {
-    say "Please provide a word or phrase.";
-    exit;
+    die "Please provide a word or phrase.\n";
 }
 my $str1 = lc(join('',@ARGV));
 

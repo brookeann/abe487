@@ -14,11 +14,10 @@ else {
 }
 while(my $l = <DATA>) {
     $l =~ s/Nobody/$r/g;
-    say $l;
+    print $l;
 }
 __DATA__
 Nobody by Shel Silverstein
-
 Nobody loves me,
 Nobody cares,
 Nobody picks me peaches and pears.

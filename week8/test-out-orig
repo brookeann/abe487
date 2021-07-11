@@ -1,0 +1,120 @@
+not ok 1 - 01-palindrome.pl
+#   Failed test '01-palindrome.pl'
+#   at /usr/local/lib/perl5/site_perl/5.20.0/Test/Script/Run.pm line 258.
+#          got: '1'
+#     expected: '0'
+# Different in line: 1: got Please provide a word or phrase.
+ok 2 - 01-palindrome.pl foo
+ok 3 - 01-palindrome.pl "Madam in Eden Im Adam"
+ok 4 - 01-palindrome.pl gatcctag
+ok 5 - 01-palindrome.pl "A man, a plan, a canal... Panama"
+not ok 6 - 02-nobody.pl John
+#   Failed test '02-nobody.pl John'
+#   at /usr/local/lib/perl5/site_perl/5.20.0/Test/Script/Run.pm line 258.
+#          got: '45'
+#     expected: '0'
+# Different in line: 2: got (), expect (John loves me,)
+# 
+# 3: got (), expect (John cares,)
+# 
+# 4: got (), expect (John picks me peaches and pears.)
+# 
+# 5: got (John loves me,), expect (John offers me candy and Cokes,)
+# 
+# 6: got (), expect (John listens and laughs at me jokes.)
+# 
+# 7: got (John cares,), expect (John helps when I get in a fight,)
+# 
+# 8: got (), expect (John does all my homework at night.)
+# 
+# 9: got (John picks me peaches and pears.), expect (John misses me,)
+# 
+# 10: got (), expect (John cries,)
+# 
+# 11: got (John offers me candy and Cokes,), expect (John thinks I'm a wonderful guy.)
+# 
+# 12: got (), expect (So if you ask me who's my best friend, in a whiz,)
+# 
+# 13: got (John listens and laughs at me jokes.), expect (I'll stand up and tell you that John is.)
+# 
+# 14: got (), expect (But yesterday night I got quite a scare,)
+# 
+# 15: got (John helps when I get in a fight,), expect (I woke up and John just wasn't there.)
+# 
+# 16: got (), expect (I called out and reached out for John's hand,)
+# 
+# 17: got (John does all my homework at night.), expect (In the darkness where John usually stands.)
+# 
+# 18: got (), expect (Then I poked through the house, in each cranny and nook,)
+# 
+# 19: got (John misses me,), expect (But I found somebody each place that I looked.)
+# 
+# 20: got (), expect (I searched till I'm tired, and now with the dawn,)
+# 
+# 21: got (John cries,), expect (There's no doubt about it-)
+# 
+# 22: got (), expect (John's gone!)
+# 
+# 23: got John thinks I'm a wonderful guy.
+# 24: got 
+# 25: got So if you ask me who's my best friend, in a whiz,
+# 26: got 
+# 27: got I'll stand up and tell you that John is.
+# 28: got 
+# 29: got But yesterday night I got quite a scare,
+# 30: got 
+# 31: got I woke up and John just wasn't there.
+# 32: got 
+# 33: got I called out and reached out for John's hand,
+# 34: got 
+# 35: got In the darkness where John usually stands.
+# 36: got 
+# 37: got Then I poked through the house, in each cranny and nook,
+# 38: got 
+# 39: got But I found somebody each place that I looked.
+# 40: got 
+# 41: got I searched till I'm tired, and now with the dawn,
+# 42: got 
+# 43: got There's no doubt about it-
+# 44: got 
+# 45: got John's gone!
+# 46: got 
+not ok 7 - 03-fasta.pl
+#   Failed test '03-fasta.pl'
+#   at /usr/local/lib/perl5/site_perl/5.20.0/Test/Script/Run.pm line 258.
+#          got: '1'
+#     expected: '0'
+# Different in line: 1: got Please provide a FASTA file.
+not ok 8 - 03-fasta.pl one.fa
+#   Failed test '03-fasta.pl one.fa'
+#   at /usr/local/lib/perl5/site_perl/5.20.0/Test/Script/Run.pm line 258.
+#          got: '2'
+#     expected: '0'
+# Different in line: 2: got (), expect (Found 1 sequence.)
+# 
+# 3: got Found 1 sequence.
+not ok 9 - 03-fasta.pl test.fa
+#   Failed test '03-fasta.pl test.fa'
+#   at /usr/local/lib/perl5/site_perl/5.20.0/Test/Script/Run.pm line 258.
+#          got: '6'
+#     expected: '0'
+# Different in line: 2: got (), expect (2: bar)
+# 
+# 3: got (2: bar), expect (3: baz)
+# 
+# 4: got (), expect (Found 3 sequences.)
+# 
+# 5: got 3: baz
+# 6: got 
+# 7: got Found 3 sequences.
+ok 10 - 04-restriction.pl
+not ok 11 - 04-restriction.pl seq.txt
+#   Failed test '04-restriction.pl seq.txt'
+#   at /usr/local/lib/perl5/site_perl/5.20.0/Test/Script/Run.pm line 258.
+#          got: '1'
+#     expected: '0'
+# Different in line: 1: got (G^AATTCAAGTTCTTGTGCGCACACAAATCCAATAAAAACTATTGTGCACACAGACGCGACTTCGCGGTCTCGCTTGTTCTTGTTGTATTCGTATTTTCATTTCTCGTTCTGTTTCTACTTAACAATGTGGTGATAATATAAAAAATAAAGCAATTCAAAAGTGTATGACTTAATTAATGAGCGATTTTTTTTTTGAAATCA^AATTTTTGGAACATTTTTTTTA^AATTCA^AATTTTGGCGAA^AATTCAATATCGGTTCTACTATCCATAATATAATTCATCAGGAATACATCTTCAAAGGCAAACGGTGACAACAA^AATTCAGGCAATTCAGGCAAATACCGAATGACCAGCTTGGTTATCAATTCTAG^AATTTGTTTTTTGGTTTTTATTTATCATTGTAAATAAGACAAACATTTGTTCCTAGTAAAGAATGTAACACCAGAAGTCACGTAAAATGGTGTCCCCATTGTTTAAACGGTTGTTGGGACCAATGGAGTTCGTGGTAACAGTACATCTTTCCCCTTG^AATTTGCCATTCAAAATTTGCGGTGGAATACCTAACAAATCCAGTG^AATTTAAGAATTGCGATGGGTAATTGACATG^AATTCCAAGGTCAAATGCTAAGAGATAGTTTAATTTATGTTTGAGACAATCAATTCCCCAATTTTTCTAAGACTTCAATCAATCTCTTAGAATCCGCCTCTGGAGGTGCACTCAGCCGCACGTCGGGCTCACCAAATATGTTGGGGTTGTCGGTGAACTCGAATAGAAATTATTGTCGCCTCCATCTTCATGGCCGTGAAATCGGCTCGCTGACGGGCTTCTCGCGCTGGATTTTTTCACTATTTTTGAATACATCATTAACGCAATATATATATATATATATTTAT), expect (G^AATTCAAGTTCTTGTGCGCACACAAATCCAATAAAAACTATTGTGCACACAGACGCGACTTCGCGGTCTCGCTTGTTCTTGTTGTATTCGTATTTTCATTTCTCGTTCTGTTTCTACTTAACAATGTGGTGATAATATAAAAAATAAAGCAATTCAAAAGTGTATGACTTAATTAATGAGCGATTTTTTTTTTGAAATCA^AATTTTTGGAACATTTTTTTTA^AATTCA^AATTTTGGCGAA^AATTCAATATCGGTTCTACTATCCATAATATAATTCATCAGGAATACATCTTCAAAGGCAAACGGTGACAACAA^AATTCAGGCAATTCAGGCAAATACCGAATGACCAGCTTGGTTATCAATTCTAG^AATTTGTTTTTTGGTTTTTATTTATCATTGTAAATAAGACAAACATTTGTTCCTAGTAAAGAATGTAACACCAGAAGTCACGTAAAATGGTGTCCCCATTGTTTAAACGGTTGTTGGGACCAATGGAGTTCGTGGTAACAGTACATCTTTCCCCTTG^AATTTGCCATTCAA^AATTTGCGGTGGAATACCTAACAAATCCAGTG^AATTTAAGAATTGCGATGGGTAATTGACATG^AATTCCAAGGTCAAATGCTAAGAGATAGTTTAATTTATGTTTGAGACAATCAATTCCCCAATTTTTCTAAGACTTCAATCAATCTCTTAGAATCCGCCTCTGGAGGTGCACTCAGCCGCACGTCGGGCTCACCAAATATGTTGGGGTTGTCGGTGAACTCGAATAGAAATTATTGTCGCCTCCATCTTCATGGCCGTGAAATCGGCTCGCTGACGGGCTTCTCGCGCTGGATTTTTTCACTATTTTTGAATACATCATTAACGCAATATATATATATATATATTTAT)
+1..11
+The plan was already output at /usr/local/lib/perl5/site_perl/5.20.0/Test/Builder.pm line 2510.
+1..11
+# Looks like you failed 6 tests of 11.
